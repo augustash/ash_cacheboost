@@ -1,0 +1,5 @@
+# Ash_Cacheboost Mappings
+
+Ash_Cacheboost.xml    app/etc/modules/Ash_Cacheboost.xml
+code                  app/code/community/Ash/Cacheboost
+locale/*              app/locale/en_US/
