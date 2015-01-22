@@ -18,4 +18,15 @@
  */
 class Ash_Cacheboost_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    const XML_PATH_ENABLED = 'ash_cacheboost/general/enabled';
+
+    /**
+     * Determines if blocks should be cachable
+     *
+     * @return  boolean
+     */
+    static public function isEnabled()
+    {
+        return Mage::getStoreConfigFlag(self::XML_PATH_ENABLED);
+    }
 }

@@ -47,6 +47,10 @@ class Ash_Cacheboost_Model_Observer
      */
     public function addBlockCache(Varien_Event_Observer $observer)
     {
+        if (!Mage::helper('ash_cacheboost')->isEnabled()) {
+            return;
+        }
+
         // log any exceptions but otherwise silently fail
         try {
             // filter out known scenarios to not add cache components
@@ -75,7 +79,7 @@ class Ash_Cacheboost_Model_Observer
                 }
             }
 
-            return $this;
+            return;
         } catch (Exception $e) {
             Mage::logException($e);
         }

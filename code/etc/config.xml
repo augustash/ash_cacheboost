@@ -13,7 +13,7 @@
 <config>
     <modules>
         <Ash_Cacheboost>
-             <version>1.0.0</version>
+             <version>1.0.1</version>
              <ashup
                 remote="https://s3.amazonaws.com/augustash/mage/Ash_Cacheboost-latest.zip" />
         </Ash_Cacheboost>
@@ -46,6 +46,9 @@
 
     <default>
         <ash_cacheboost>
+            <general>
+                <enabled>1</enabled>
+            </general>
         </ash_cacheboost>
     </default>
 </config>

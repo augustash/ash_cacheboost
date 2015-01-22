@@ -1,8 +1,3 @@
-Title:  Ash_Cacheboost Extension
-Author: Peter McWilliams
-Email:  core@augustash.com
-Date:   Dec 1, 2014
-
 # Description
 
 Many Magento core blocks do not have block-level caching enabled by default. This
